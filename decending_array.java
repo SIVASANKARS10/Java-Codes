@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Scanner;
 public class decending_array{
     public static void main(String[] args){
@@ -19,4 +20,27 @@ public class decending_array{
     }
 }
 
+=======
+import java.util.Scanner;
+public class decending_array{
+    public static void main(String[] args){
+        int []a={5,3,1,2,4};
+        int temp;
+        
+        for(int i=0;i<a.length-1;i++){
+            for(int j=i+1;j<a.length;j++){
+                if(a[i]<a[j]){
+                    temp=a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                }
+            }   
+    }
+    System.out.println("Descending:");
+    for(int i=0;i<a.length;i++){
+        System.out.print(a[i]+" ");
+    }
+}
+
+>>>>>>> 0e87076eb389e89e07a9621377cdcf1a8f9f8f9a
 }

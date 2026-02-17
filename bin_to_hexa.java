@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Scanner;
 class bin_to_hexa{
     public static void main(String[] args){
@@ -28,3 +29,35 @@ class bin_to_hexa{
         System.out.print(hex);
     }
 }
+=======
+import java.util.Scanner;
+class bin_to_hexa{
+    public static void main(String[] args){
+        Scanner in=new Scanner(System.in);
+        int value;
+
+        String bin="101010",hex="";
+        while(bin.length()%4!=0){
+            bin="0"+bin;
+        }  
+        for(int i=0;i<bin.length();i=i+4){
+            value=0;
+            value+=(bin.charAt(i)-'0')*8;
+            value+=(bin.charAt(i+1)-'0')*4;
+            value+=(bin.charAt(i+2)-'0')*2;
+            value+=(bin.charAt(i+3)-'0')*1;
+            if(value<10){
+                hex=hex+value;
+            }
+            else{
+                value=(value-10)+'A';
+                hex=hex+(char)value;
+            }
+        }
+           
+
+        
+        System.out.print(hex);
+    }
+}
+>>>>>>> 0e87076eb389e89e07a9621377cdcf1a8f9f8f9a

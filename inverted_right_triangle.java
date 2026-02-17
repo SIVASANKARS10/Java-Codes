@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 public class inverted_right_triangle{
     public static void main(String[] args){
     int row=4;
@@ -11,4 +12,19 @@ System.out.println();
 }
 
 
+=======
+public class inverted_right_triangle{
+    public static void main(String[] args){
+    int row=4;
+    for(int i=row;i>=0;i--){
+        for(int j=1;j<=i;j++){
+    System.out.print("*");
+}
+System.out.println();
+    }
+}
+}
+
+
+>>>>>>> 0e87076eb389e89e07a9621377cdcf1a8f9f8f9a
     
